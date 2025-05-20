@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Atiidade N2 em Card</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="container py-4">
+      <h1 class="mb-4"> Atividade </h1>
+
+      <!-- 01- Verificar número positivo, negativo ou zero -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h2 class="card-title">Atividade 01</h2>
+          <h4 class="card-text">Verificar número positivo, negativo ou zero</h4>
+          <input type="number" id="numero" class="form-control mb-2" placeholder="Digite um número" />
+          <button onclick="verificarNumero()" class="btn btn-primary">Verificar</button>
+          <p id="resultadoNumeroPositivo" class="mt-2"></p>
+        </div>
+      </div>
+
+      <!-- 02- Verificar se aluno foi aprovado -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h2 class="card-title">Atiidade 02</h2>
+          <h4 class="card-text">Verificar Nota do Aluno</h4>
+          <input type="number" id="nota1" class="form-control mb-2" placeholder="Insira sua 1ª nota" />
+          <input type="number" id="nota2" class="form-control mb-2" placeholder="Insira sua 2ª nota " />
+          <button onclick="verificarNotas()" class="btn btn-primary">Verificar Media das Notas</button>
+          <p id="mediaDeNotas" class="mt-2"></p>
+          <p id="situacao" class="mt-2"></p>
+        </div>
+      </div>
+
+      <!-- 03- Verificar se é adolescente -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h2 class="card-title">Atividade 03</h2>
+          <h4 class="card-text">Verificar se é adolescente</h4>
+          <input type="number" id="idade" class="form-control mb-2" placeholder="Digite sua idade para saber se você é adolescente" />
+          <button onclick="verificarAdolecente()" class="btn btn-primary">Verificar</button>
+          <p id="resultadoAdolecente" class="mt-2"></p>
+        </div>
+      </div>
+
+            <!--  04-  -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h2 class="card-title">Atividade 04</h2>
+          <h4 class="card-text">Mostrar o maior numero do vetor</h4>
+          <input type="number" id="numero1" class="form-control mb-2" placeholder="Digite o 1º número">
+          <input type="number" id="numero2" class="form-control mb-2" placeholder="Digite o 2º número">
+          <button onclick="mostrarNumeros()" class="btn btn-primary">Ver maior número</button>
+          <p id="maiorNumero" class="mt-2"></p>
+        </div>
+      </div>
+
+            <!-- 05- -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h2 class="card-title">Atividade 05</h2>
+          <h4 class="card-text">Dias da semana</h4>
+          <input type="number" id="dia" class="form-control mb-2" placeholder=" Digite um número de 1 a 7 para mostrar o dia da semana (1 - Domingo, ..., 7 - Sábado).  ">
+          <button onclick="mostrarDias()" class="btn btn-primary">Mostrar</button>
+          <p id="mensagem" class="mt-2"></p>
+        </div>
+      </div>
+
+            <!-- 06- -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h2 class="card-title">Atividade 06</h2>
+          <h4 class="card-text">Contagem de 1 a N</h4>
+          <input type="number" id="numberN" class="form-control mb-2" placeholder="Digite um número">
+          <button onclick="fazerContagem()" class="btn btn-primary">Fazer Contagem</button>
+          <ul id="contagem" class="list-group"></ul>
+        </div>
+      </div>
+
+            <!-- 07- -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h2 class="card-title">Atividade 07</h2>
+          <h4 class="card-text">Pares de 1 a 20</h4>
+          <button onclick="Numerospares()" class="btn btn-primary">Mostrar</button>
+          <ul id="listaPares" class="list-group" ></ul>
+        </div>
+      </div>
+ 
+            <!-- 08- -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h2 class="card-title">Atividade 08</h2>
+          <h4 class="card-text">Entre 10 e 50</h4>
+          <input type="number" id="numero" class="form-control mb-2" placeholder="Digite um número">
+          <button onclick="mostrar()" class="btn btn-primary">Verificar</button>
+          <p id="mostrarNumero" class="mt-2"></p>
+        </div>
+      </div>
+
+            <!-- 09- -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h2 class="card-title">Atividade 09</h2>
+          <h4 class="card-text">multiplo de 3 e 5</h4>
+          <input type="text" id="multiplo" class="form-control mb-2" placeholder="Digite um número">
+          <button onclick="verificarMultiplo()" class="btn btn-primary">Verificar se é multiplo</button>
+          <p id="mostrarMultiplo" class="mt-2"></p>
+        </div>
+      </div>
+
+            <!-- 10- -->
+      <div class="card mb-4">
+         <div class="card-body">
+          <h2 class="card-title">Atividade 10</h2>
+          <h4 class="card-text">Digite o nome de 5 pessoas</h4>
+          <input type="text" id="nomeInput" placeholder="Digite os nomes aqui" class="form-control mb-2" autocomplete="off" />
+          <button id="adicionarBtn" class="btn btn-primary">Adicionar Nome</button>
+          <button id="removerBtn" class="btn btn-danger">Remover Nomes</button>
+          <li class="list-group" id="resultado"></li>
+        </div>
+      </div>
+
+
+    </div>
+
+    <script src="scripit.js"></script>
+  </body>
+</html>
